@@ -1,9 +1,7 @@
 spring:
   application:
     name: Discovery
-server:
-  port: 8761
-eureka:
-   client:
-      registerWithEureka: false
-      fetchRegistry: false
+  config:
+    import: optional:configserver:${SPRING_CLOUD_CONFIG_URI:http://localhost:8888}
+  profiles:
+    active: dev

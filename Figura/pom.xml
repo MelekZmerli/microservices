@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tn.micros</groupId>
-	<artifactId>Discovery</artifactId>
+	<artifactId>Figura</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Discovery</name>
-	<description>A Microservices Discovery server</description>
+	<name>Figura</name>
+	<description>A remote configuration server</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
@@ -20,21 +20,13 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<version>1.4.7.RELEASE</version>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
