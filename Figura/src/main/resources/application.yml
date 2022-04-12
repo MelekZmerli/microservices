@@ -9,5 +9,6 @@ spring:
           
             git:
               uri: https://github.com/MelekZmerli/microservices
+              search-paths: service-configs
   profiles:
       active: default
