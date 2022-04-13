@@ -1,6 +1,10 @@
 spring:
   application:
     name: Discovery
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
 server:
   port: 8761
 eureka:
