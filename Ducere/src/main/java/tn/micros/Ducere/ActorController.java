@@ -21,7 +21,7 @@ public class ActorController {
       @GetMapping("/data")
       public String getActorData() {
 
-         return "data of Actor-SERVICE, Running on port: "
+         return "data of Ducere, Running on port: "
            +environment.getProperty("local.server.port");
       }
 
@@ -42,7 +42,7 @@ public class ActorController {
       @GetMapping("/entity")
       public ResponseEntity<String> getEntityData() {
          return new ResponseEntity<String>(
-           "Hello from ActorController", 
+           "Hello from Ducere", 
             HttpStatus.OK);
       }
 }
