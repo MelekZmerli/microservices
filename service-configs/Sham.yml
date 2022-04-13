@@ -9,3 +9,4 @@ eureka:
          defaultZone: http://localhost:8762
       instance:
          preferIpAddress: true
+      fetch-registry: false
