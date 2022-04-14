@@ -1,10 +1,7 @@
-
-server:
-  port: 9000
 spring:
-  application:
-    name: Ducere
-eureka:
-   client:
-      service-url:
-         default-zone: http://localhost:8761/eureka
+   application:
+      name: Sham
+   config:
+      import: optional:configserver:${SPRING_CLOUD_CONFIG_URI:http://localhost:8888}
+   profiles:
+      active: default

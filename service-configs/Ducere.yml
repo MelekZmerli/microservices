@@ -1,12 +1,12 @@
 spring:
    application:
-      name: Sham
+      name: Ducere
    boot:
     admin:
       client:
         url: http://localhost:8080
 server:
-   port: 8088
+   port: 9000
 eureka:
    client:
       serviceUrl:
