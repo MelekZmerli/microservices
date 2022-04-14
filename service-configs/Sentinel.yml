@@ -8,8 +8,8 @@ spring:
       - id: Chef
         uri: http://localhost:8100/
         predicates:
-        - Path=/Chef/**
+        - Path=/**
       - id: Figura
         uri: http://localhost:8888/
         predicates:
-        - Path=/Figura/**
+        - Path=/**
