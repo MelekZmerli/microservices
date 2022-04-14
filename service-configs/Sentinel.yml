@@ -7,5 +7,9 @@ spring:
       routes:
       - id: Chef
         uri: http://localhost:8100/
+        predicates:
+        - Path=/**
       - id: Figura
         uri: http://localhost:8888/
+        predicates:
+        - Path=/**
