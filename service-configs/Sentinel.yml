@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: Chef
+        uri: http://localhost:8100/
+      - id: Figura
+        uri: http://localhost:8888/
