@@ -11,5 +11,3 @@ spring:
               search-paths: service-configs
   profiles:
       active: default
-logging:
-  level: DEBUG
