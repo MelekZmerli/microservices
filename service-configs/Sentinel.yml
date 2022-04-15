@@ -25,6 +25,8 @@ spring:
     admin:
       client:
         url: http://localhost:8100
+  main:
+    web-application-type: reactive
 
 eureka:
    client:
