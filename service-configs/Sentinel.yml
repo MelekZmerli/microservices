@@ -42,9 +42,9 @@ keycloak:
   resource: Sentinel
   ssl-required: all
   public-client: true
-  securityConstraints:
-    - authRoles: [user]
-      securityCollections:
+  securityConstraints[0]:
+    - authRoles[0]: user
+      securityCollections[0]:
         - name: Sentinel
-          patterns: [/movie/*]
+          patterns[0]: /applications
 
