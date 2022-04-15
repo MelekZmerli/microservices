@@ -41,3 +41,7 @@ keycloak:
   realm: SpringBootKeycloak
   resource: login-app
   public-client: true
+  security-constraints[0]:
+    authRoles[0]: user
+  securityCollections[0]:
+    patterns[0]: /*
