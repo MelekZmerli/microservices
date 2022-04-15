@@ -25,6 +25,16 @@ spring:
     admin:
       client:
         url: http://localhost:8100
+  main:
+    web-application-type: reactive
+
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka
+      instance:
+         preferIpAddress: true
+      fetch-registry: false
 
 keycloak:
   auth-server-url: http://localhost:8180/auth
