@@ -33,3 +33,9 @@ eureka:
       instance:
          preferIpAddress: true
       fetch-registry: false
+
+keycloak:
+  auth-server-url: http://localhost:8180/auth
+  realm: SpringBootKeycloak
+  resource: login-app
+  public-client: true
