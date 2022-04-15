@@ -9,10 +9,6 @@ spring:
         uri: http://localhost:8100/
         predicates:
         - Path=/applications/**
-      - id: Figura
-        uri: http://localhost:8888/
-        predicates:
-        - Path=/**
       - id: Ducere
         uri: http://localhost:9000/
         predicates:
@@ -20,11 +16,11 @@ spring:
       - id: Sham
         uri: http://localhost:8088/
         predicates:
-        - Path=/Discovery/**
+        - Path=/movie/**
       - id: Discovery
         uri: http://localhost:8761/
         predicates:
-        - Path=/Eureka/**
+        - Path=/**
 
 eureka:
    client:
