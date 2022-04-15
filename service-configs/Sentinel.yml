@@ -39,7 +39,8 @@ eureka:
 keycloak:
   auth-server-url: http://localhost:8180/auth
   realm: Cǣg
-  resource: login-app
+  resource: Sentinel
+  ssl-required: all
   public-client: true
   securityConstraints:
     - authRoles: [user]
