@@ -4,7 +4,7 @@ spring:
    boot:
     admin:
       client:
-        url: http://localhost:8080
+        url: http://localhost:8100
 server:
    port: 8088
 eureka:
