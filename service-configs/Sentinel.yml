@@ -39,11 +39,11 @@ eureka:
 keycloak:
   auth-server-url: http://localhost:8180/auth
   realm: Cǣg
-  resource: Sentinel
+  resource: login-app
   public-client: true
   securityConstraints:
     - authRoles: [user]
       securityCollections:
         - name: Sentinel
-          patterns: [/*]
+          patterns: [/movie/*]
 
