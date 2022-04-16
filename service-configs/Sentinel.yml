@@ -46,5 +46,5 @@ keycloak:
     - authRoles: user
       securityCollections:
         - name: Sentinel
-          patterns[0]: /applications
+          patterns[0]: /*
 
