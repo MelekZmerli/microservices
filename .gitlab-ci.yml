@@ -1,0 +1,18 @@
+stages: [ view, write, check ]
+
+view_content:
+    stage: view  
+    script:  
+          - echo "view stage"
+write_content:  
+    stage: write  
+    script: 
+        - echo "write content job" 
+write_random: 
+    stage: write  
+    script:   
+        - echo "write random job"
+check_content: 
+    stage: check  
+    script:  
+        - echo "check stage"
