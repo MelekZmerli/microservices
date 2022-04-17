@@ -1,9 +1,5 @@
-stages: [ view, deploy ]
+stages: [ deploy ]
 
-view_content:
-    stage: view  
-    script:  
-          - echo "view stage"
 deploy_content: 
     stage: deploy  
     script:  
