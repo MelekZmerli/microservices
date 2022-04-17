@@ -1,6 +1,11 @@
+image: tmaier/docker-compose:latest
+
+services:
+  - docker:dind
+
 stages: [ deploy ]
 
 deploy_content: 
     stage: deploy  
     script:  
-        - docker-compose up
+        - docker-compose build
