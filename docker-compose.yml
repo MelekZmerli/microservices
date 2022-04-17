@@ -9,6 +9,6 @@ services:
     build: ./Discovery
     container_name: Discovery_1.0
     ports:
-      - 8100:8002
+      - 8100:8100
     depends_on:
       - figura
