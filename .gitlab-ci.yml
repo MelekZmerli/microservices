@@ -1,4 +1,4 @@
-stages: [ view, write, check ]
+stages: [ view, write, deploy ]
 
 view_content:
     stage: view  
@@ -12,7 +12,7 @@ write_random:
     stage: write  
     script:   
         - echo "write random job"
-check_content: 
-    stage: check  
+deploy_content: 
+    stage: deploy  
     script:  
-        - echo "check stage"
+        - docker-compose up
