@@ -1,14 +1,14 @@
 version: '3'
 services:
-  Figura:
+  figura:
     build: ./Figura
     container_name:  Figura_1.0
     ports:
       - 8888:8888
-  Discovery:
+  discovery:
     build: ./Discovery
     container_name: Discovery_1.0
     ports:
       - 8100:8002
     depends_on:
-      - Figura
+      - figura
