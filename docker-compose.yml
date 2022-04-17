@@ -1,4 +1,4 @@
-version: 20.10.11
+version: 3
 services:
   Figura:
     build: ./Figura

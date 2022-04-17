@@ -1,17 +1,9 @@
-stages: [ view, write, deploy ]
+stages: [ view, deploy ]
 
 view_content:
     stage: view  
     script:  
           - echo "view stage"
-write_content:  
-    stage: write  
-    script: 
-        - echo "write content job" 
-write_random: 
-    stage: write  
-    script:   
-        - echo "write random job"
 deploy_content: 
     stage: deploy  
     script:  
