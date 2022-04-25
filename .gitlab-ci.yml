@@ -1,4 +1,6 @@
-image: docker:19.03.12
+ image:
+      name: docker/compose:latest
+      entrypoint: ["/bin/sh", "-c"]
 
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
