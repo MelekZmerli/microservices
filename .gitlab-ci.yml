@@ -15,3 +15,4 @@ deploy_content:
     stage: deploy  
     script:  
         - docker-compose build
+        
