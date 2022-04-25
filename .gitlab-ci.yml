@@ -1,4 +1,7 @@
-image: tmaier/docker-compose:latest
+image: docker:19
+
+variables:
+  DOCKER_TLS_CERTDIR: "/certs"
 
 services:
   - docker:19-dind
