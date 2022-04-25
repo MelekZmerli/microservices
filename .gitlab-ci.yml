@@ -1,7 +1,10 @@
 image: tmaier/docker-compose:latest
 
 services:
-  - docker:dind
+  - docker:19.03.12-dind
+
+before_script:
+  - docker info
 
 stages: [ deploy ]
 
