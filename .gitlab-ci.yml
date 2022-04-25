@@ -1,6 +1,5 @@
 image:
-     name: docker/compose:latest
-     entrypoint: ["/bin/sh", "-c"]
+     name: docker
 
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
@@ -13,10 +12,9 @@ services:
 before_script:
   - docker info
 
-stages: [ deploy ]
+stages: [ build ]
 
-deploy_content: 
-    stage: deploy  
+build_content: 
+    stage: build  
     script:  
         - docker-compose build
-        
