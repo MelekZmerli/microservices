@@ -4,6 +4,8 @@ image:
 
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
 
 services:
   - docker:19.03.12-dind
