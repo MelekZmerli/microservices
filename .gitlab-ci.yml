@@ -1,5 +1,5 @@
 image:
-     name: docker
+     name: docker:19.03.12
 
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
@@ -7,10 +7,9 @@ variables:
   DOCKER_DRIVER: overlay2
 
 services:
-  - docker:dind
+  - docker:19.03.12-dind
 
 before_script:
-  - echo $id
   - docker info
   - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   
