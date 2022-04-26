@@ -5,6 +5,7 @@ variables:
 
 services:
   - docker:19.03.12-dind
+  - docker/compose
 
 before_script:
   - docker info
